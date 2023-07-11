@@ -3,3 +3,9 @@ body {
   width: 100%;
   margin: 0;
 }
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
