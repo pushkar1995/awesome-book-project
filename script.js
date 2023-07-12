@@ -49,6 +49,9 @@ addButton.addEventListener('click', () => {
 
   addBook(title, author);
   displayBooks();
+
+  titleInput.value = '';
+  authorInput.value = '';
 });
 
 // Display the initial books in the collection
