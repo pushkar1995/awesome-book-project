@@ -1,11 +1,94 @@
-body {
-  font-family: 'Lato', sans-serif;
-  width: 100%;
-  margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
 }
 
-.list {
+h1 {
+  text-align: center;
+}
+
+header {
+  height: 54px;
+  background-color: aqua;
+  margin: auto;
+  padding: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+  gap: 10px;
+}
+
+.add-new,
+.listBook {
+  width: 45%;
+  margin-top: 5%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+.inputs {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  margin-top: 3%;
+  margin-left: 35%;
+}
+
+input {
+  width: 40%;
+  height: 30px;
+  padding: 5px;
+  margin-top: 3%;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+#addButton {
+  padding: 6px;
+  width: 60px;
+  margin-top: 5px;
+  margin-left: 11%;
+  background-color: green;
+  border-radius: 15px;
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+ul li {
+  list-style: none;
+  padding: 22px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+.remove-btn {
+  padding: 3px;
+  background-color: red;
+  margin-left: 4%;
+  border-radius: 15px;
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  float: right;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  height: 54px;
+  background-color: aqua;
+  padding: 15px;
+  margin-top: 5%;
+  display: flex;
 }

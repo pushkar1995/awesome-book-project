@@ -2,25 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Awesome-Book</title>
 </head>
 
 <body>
-    <section id="list_section">
-        <h1>Awesome books</h1>
-        <div id="list" class="list">
+    <h1>Awesome-Book</h1>
+    <header>
+    </header>
+    <div class="container">
+
+        <div id="addNew" class="add-new">
+            <h2>Add New Book</h2>
+            <h3>Click the add button to add new book</h3>
+            <div class="inputs">
+                <input type="text" id="titleInput" placeholder="Title">
+                <input type="text" id="authorInput" placeholder="Author">
+                <button id="addButton">Add</button>
+            </div>
+        </div>
+        <div class="listBook">
+            <h2>Books List</h2>
+            <ul id="bookList"></ul>
 
         </div>
-    </section>
-    <hr>
-    <section>
-        <input id="title" type="text"><br><br>
-        <input id="author" type="text"><br><br>
-        <button type="button">Add</button>
-    </section>
+    </div>
+    </div>
+
+    <footer>
+        copyright &copy;2023 Mohammad Yaser || Pukshar
+    </footer>
 </body>
+<script src="script.js"></script>
 
 </html>
