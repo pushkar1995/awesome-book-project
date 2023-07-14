@@ -5,79 +5,68 @@
 }
 
 h1 {
-  text-align: center;
-}
-
-header {
-  height: 54px;
-  background-color: aqua;
-  margin: auto;
-  padding: 15px;
+  margin-left: 8%;
 }
 
 .container {
   display: flex;
-  flex-direction: row;
-  margin-left: 10%;
+  flex-direction: column;
+  margin-left: 35%;
   gap: 10px;
 }
 
-.add-new,
 .listBook {
   width: 45%;
-  margin-top: 5%;
-  border: 1px solid gray;
+  border: 3px solid black;
   border-radius: 5px;
   padding: 5px;
 }
 
-h2,
-h3 {
-  text-align: center;
+.add-new {
+  width: 50%;
+  margin-left: 10%;
+}
+
+h2 {
+  margin-left: 6%;
 }
 
 .inputs {
   display: flex;
   flex-direction: column;
-  margin-top: 3%;
-  margin-left: 35%;
 }
 
 input {
-  width: 40%;
+  width: 50%;
   height: 30px;
   padding: 5px;
   margin-top: 3%;
-  border: 1px solid gray;
-  border-radius: 10px;
+  border: 2px solid black;
 }
 
 #addButton {
   padding: 6px;
   width: 60px;
   margin-top: 5px;
-  margin-left: 11%;
-  background-color: green;
-  border-radius: 15px;
-  color: aliceblue;
+  margin-left: 36%;
+  color: black;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bolder;
 }
 
 ul li {
   list-style: none;
-  padding: 22px;
-  border: 1px solid black;
-  border-radius: 8px;
+  padding: 5px;
   margin-top: 5px;
 }
 
+li:nth-child(odd) {
+  background-color: rgb(207, 229, 247); /* Red */
+}
+
 .remove-btn {
-  padding: 3px;
-  background-color: red;
   margin-left: 4%;
-  border-radius: 15px;
-  color: aliceblue;
+  color: black;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bolder;
   float: right;
