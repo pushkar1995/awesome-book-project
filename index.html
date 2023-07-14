@@ -10,27 +10,52 @@
 </head>
 
 <body>
-
+    <header>
+        <h4>Awesome Books</h4>
+        <nav>
+            <ul class="navbar">
+                <li><a id="list" href="#">List</a></li>
+                <li><a id="add" href="#">Add new</a></li>
+                <li><a id="contactBtn" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p id="dynamicParagraph"></p>
     <div class="container">
-        <h1>All Awesome-Book</h1>
-        <div class="listBook">
-
-            <ul id="bookList"></ul>
-
-        </div>
-
-        <div id="addNew" class="add-new">
-            <h2>Add a new book</h2>
-            <div class="inputs">
-                <input type="text" id="titleInput" placeholder="Title">
-                <input type="text" id="authorInput" placeholder="Author">
-                <button id="addButton">Add</button>
+        <section>
+            <div id="booklist" class="listBook">
+                <h1>All Awesome-Book</h1>
+                <ul id="bookList"></ul>
             </div>
-        </div>
+        </section>
 
+        <section>
+            <div id="addNew" class="add-new">
+                <h2>Add a new book</h2>
+                <div class="inputs">
+                    <input type="text" id="titleInput" placeholder="Title">
+                    <input type="text" id="authorInput" placeholder="Author">
+                    <button id="addButton">Add</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="contact" class="contact">
+                <h5>Contact information</h5>
+                <p>If you have any questions or suggestions feel free to get in touch to reach out you can :</p>
+                <ul class="contact-ul">
+                    <li>Email us at email@email.com</li>
+                    <li>By telephone +0000000000000</li>
+                    <li>Or you can pop in, and have a chat @ Example street, Example City at a Fictional Country</li>
+                </ul>
+            </div>
+        </section>
     </div>
+    <footer>
+        <p>&copy;2023 Mohammad Yaser || Pushkar</p>
+    </footer>
     </div>
 </body>
-<script src="js-classes-script.js"></script>
+<script src="Javascripts/js-classes-script.js"></script>
 
 </html>

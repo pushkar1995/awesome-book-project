@@ -1,34 +1,78 @@
-* {
+body {
   box-sizing: border-box;
   padding: 0%;
   margin: 0%;
 }
 
+header {
+  height: 64px;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid black;
+}
+
+#dynamicParagraph {
+  float: right;
+  margin-right: 2em;
+}
+
+.contact {
+  margin-left: 25%;
+  display: none;
+}
+
+.contact-ul li {
+  margin-top: 3%;
+}
+
+.navbar {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4%;
+  list-style: none;
+  padding: 5px;
+}
+
+.navbar li {
+  padding-right: 15px;
+  height: 23px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar li:not(:last-child) {
+  border-right: 1px solid black;
+  margin-right: 12px;
+}
+
 h1 {
-  margin-left: 8%;
+  text-align: center;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  margin-left: 35%;
-  gap: 10px;
 }
 
 .listBook {
-  width: 45%;
-  border: 3px solid black;
-  border-radius: 5px;
+  width: 70%;
   padding: 5px;
+  margin: auto;
 }
 
 .add-new {
-  width: 50%;
-  margin-left: 10%;
+  width: 30%;
+  margin: auto;
+  display: none;
 }
 
 h2 {
-  margin-left: 6%;
+  text-align: center;
 }
 
 .inputs {
@@ -37,7 +81,6 @@ h2 {
 }
 
 input {
-  width: 50%;
   height: 30px;
   padding: 5px;
   margin-top: 3%;
@@ -47,20 +90,25 @@ input {
 #addButton {
   padding: 6px;
   width: 60px;
-  margin-top: 5px;
-  margin-left: 36%;
+  margin-top: 15px;
+  margin-left: 84%;
   color: black;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bolder;
 }
 
-ul li {
+#bookList {
+  border: 3px solid black;
+}
+
+ul > .bg-gray {
   list-style: none;
   padding: 5px;
   margin-top: 5px;
+  margin-left: -37px;
 }
 
-li:nth-child(odd) {
+.bg-gray:nth-child(odd) {
   background-color: rgb(207, 229, 247); /* Red */
 }
 
@@ -72,12 +120,15 @@ li:nth-child(odd) {
   float: right;
 }
 
+h5 {
+  margin-left: 25%;
+  font-size: larger;
+}
+
 footer {
+  border: 2px solid black;
+  padding: 0.2em;
+  position: fixed;
+  bottom: 0.4em;
   width: 100%;
-  position: absolute;
-  height: 54px;
-  background-color: aqua;
-  padding: 15px;
-  margin-top: 5%;
-  display: flex;
 }
